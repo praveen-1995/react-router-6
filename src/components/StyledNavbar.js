@@ -11,7 +11,6 @@ const Navbar = () => {
       >
         Home
       </NavLink>
-
       {/*============ Explicit Return============ */}
       <NavLink
         to="/about"
@@ -29,6 +28,14 @@ const Navbar = () => {
         }}
       >
         Products
+      </NavLink>
+
+      {/* ============Implicit Return========== */}
+      <NavLink
+        to="/login"
+        className={({ isActive }) => (isActive ? "active" : "link")}
+      >
+        Login
       </NavLink>
     </nav>
   );
